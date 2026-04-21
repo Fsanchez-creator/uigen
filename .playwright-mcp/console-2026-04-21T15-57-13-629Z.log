@@ -1,0 +1,136 @@
+[     968ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:14537
+[    1257ms] [ERROR] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <Home>
+        <MainContent user={null}>
+          <FileSystemProvider initialData={undefined}>
+            <ChatProvider projectId={undefined} initialMessages={undefined}>
+              <div className="h-screen w...">
+                <ResizablePanelGroup id="main-panel..." direction="horizontal" className="h-full">
+                  <forwardRef(PanelGroup) data-slot="resizable-..." className="flex w-ful..." id="main-panel..." ...>
+                    <PanelGroup data-slot="resizable-..." className="flex w-ful..." id="main-panel..." ...>
+                      <div data-slot="resizable-..." className="flex w-ful..." id="main-panel..." ref={{current:null}} ...>
+                        <ResizablePanel defaultSize={35} minSize={25} maxSize={50}>
+                          <forwardRef(Panel) data-slot="resizable-..." defaultSize={35} minSize={25} maxSize={50}>
+                            <Panel data-slot="resizable-..." defaultSize={35} minSize={25} maxSize={50} ...>
+                              <div
+                                data-slot="resizable-panel"
+                                className=""
++                               id="_R_6lrlb_"
+-                               id="_R_slrlb_"
+                                style={{flexBasis:0,flexGrow:"35.0",flexShrink:1,overflow:"hidden",pointerEvents:undefined}}
+                                data-panel-group-id="main-panel-group"
+                                data-panel=""
+                                data-panel-collapsible={undefined}
++                               data-panel-id="_R_6lrlb_"
+-                               data-panel-id="_R_slrlb_"
+                                data-panel-size="35.0"
+                              >
+                        <ResizableHandle className="w-[1px] bg...">
+                          <PanelResizeHandle data-slot="resizable-..." className={"focus-vi..."}>
+                            <div
+                              data-slot="resizable-handle"
+                              className={"focus-visible:ring-ring relative flex items-center justify-center after:abs..."}
+                              id={undefined}
+                              onBlur={function onBlur}
+                              onFocus={function onFocus}
+                              ref={{current:null}}
+                              role="separator"
+                              style={{touchAction:"none",userSelect:"none"}}
+                              tabIndex={0}
+                              data-panel-group-direction="horizontal"
+                              data-panel-group-id="main-panel-group"
+                              data-resize-handle=""
+                              data-resize-handle-active={undefined}
+                              data-panel-resize-handle-enabled={true}
++                             data-panel-resize-handle-id="_R_alrlb_"
+-                             data-panel-resize-handle-id="_R_1clrlb_"
+                              data-resize-handle-state="inactive"
+                            >
+                        <ResizablePanel defaultSize={65}>
+                          <forwardRef(Panel) data-slot="resizable-..." defaultSize={65}>
+                            <Panel data-slot="resizable-..." defaultSize={65} forwardedRef={null}>
+                              <div
+                                data-slot="resizable-panel"
+                                className=""
++                               id="_R_elrlb_"
+-                               id="_R_1slrlb_"
+                                style={{flexBasis:0,flexGrow:"65.0",flexShrink:1,overflow:"hidden",pointerEvents:undefined}}
+                                data-panel-group-id="main-panel-group"
+                                data-panel=""
+                                data-panel-collapsible={undefined}
++                               data-panel-id="_R_elrlb_"
+-                               data-panel-id="_R_1slrlb_"
+                                data-panel-size="65.0"
+                              >
+                                ...
+                                  <div role="tablist" aria-orientation="horizontal" data-slot="tabs-list" ...>
+                                    ...
+                                      <Primitive.span.Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                        <Primitive.span.SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                          <Primitive.button type="button" role="tab" aria-selected={true} ...>
+                                            <button
+                                              type="button"
+                                              role="tab"
+                                              aria-selected={true}
++                                             aria-controls="radix-_R_5ulrlb_-content-preview"
+-                                             aria-controls="radix-_R_nslrlb_-content-preview"
+                                              data-state="active"
+                                              data-disabled={undefined}
+                                              disabled={false}
++                                             id="radix-_R_5ulrlb_-trigger-preview"
+-                                             id="radix-_R_nslrlb_-trigger-preview"
+                                              data-slot="tabs-trigger"
+                                              className={"dark:data-[state=active]:text-foreground focus-visible:bord..."}
+                                              onMouseDown={function}
+                                              onKeyDown={function}
+                                              onFocus={function}
+                                              tabIndex={-1}
+                                              data-orientation="horizontal"
+                                              data-radix-collection-item=""
+                                              ref={function}
+                                            >
++                                             Preview
+                                    ...
+                                      <Primitive.span.Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                        <Primitive.span.SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                          <Primitive.button type="button" role="tab" aria-selected={false} ...>
+                                            <button
+                                              type="button"
+                                              role="tab"
+                                              aria-selected={false}
++                                             aria-controls="radix-_R_5ulrlb_-content-code"
+-                                             aria-controls="radix-_R_nslrlb_-content-code"
+                                              data-state="inactive"
+                                              data-disabled={undefined}
+                                              disabled={false}
++                                             id="radix-_R_5ulrlb_-trigger-code"
+-                                             id="radix-_R_nslrlb_-trigger-code"
+                                              data-slot="tabs-trigger"
+                                              className={"dark:data-[state=active]:text-foreground focus-visible:bord..."}
+                                              onMouseDown={function}
+                                              onKeyDown={function}
+                                              onFocus={function}
+                                              tabIndex={-1}
+                                              data-orientation="horizontal"
+                                              data-radix-collection-item=""
+                                              ref={function}
+                                            >
++                                             Code
+    ...
+ @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b0daae9a._.js:2359
+[ 1767487ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5949
+[ 1767580ms] [LOG] [Fast Refresh] done in 199ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5809
